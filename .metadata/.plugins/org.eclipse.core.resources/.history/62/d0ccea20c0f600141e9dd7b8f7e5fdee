@@ -1,0 +1,39 @@
+package ordenextraño;
+
+import java.util.ArrayList;
+
+public class Vectnummay {
+	ArrayList<Object> lista = new ArrayList<Object>();
+	
+	
+	public void printnumberline(int centro, int largo)
+	{
+		int valant;
+		int valsig;
+		int mitad = (largo/2);
+		valant = centro;
+		valsig = centro;
+		lista.add(mitad,centro);
+		for (int f = mitad; f < largo ; f++) 
+		{
+			for (int g = mitad; g == 0;g--)
+			{
+				
+				if (valant <= 0)  
+				{
+					lista.add(g," ");
+					lista.add(f," ");
+				}
+				lista.add(f,valsig);
+				lista.add(g,valant);
+				valsig --;
+				valant --;
+				
+			}
+		}
+		for(Object o: lista){
+	        System.out.println(o);
+		} 	
+	}
+
+}

@@ -1,0 +1,22 @@
+package ordenextraño;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vectnummay vnm = new Vectnummay();
+		int ncenter;
+		int nlarge;
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("ingrese el valor central:");
+		ncenter = teclado.nextInt();
+		System.out.println("ingrese el largo del arreglo:");
+		nlarge = teclado.nextInt();
+		
+		vnm.printnumberline( ncenter, nlarge);
+		teclado.close();
+	}
+
+}
